@@ -2,7 +2,7 @@ pipeline {
     agent any 
 
     environment {
-        IMAGE_NAME = "apoorvar12/java-demo"
+        IMAGE_NAME = "phanindra61/java-demo"
         TAG = "${BUILD_NUMBER}" 
         FULL_IMAGE = "${IMAGE_NAME}:${TAG}"
 
@@ -12,7 +12,7 @@ pipeline {
 
         stage('Clone'){
             steps {
-                git branch: 'main', url: 'https://github.com/apoorvaramesh11/simple-java-app.git'
+                git branch: 'main', url: 'https://github.com/phanindra61/simple-java-app.git'
             }
         }
         
